@@ -12,11 +12,10 @@ class Song
     self.genre = genre if genre
   end
 
-=begin
   def save
     @@all << self
   end
-=end
+
   def artist=(artist)
     @artist = artist
     artist.add_song(self)
